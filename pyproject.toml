@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "api-rate-guard"
+version = "1.0.0"
+description = "High-performance Token Bucket and Sliding Window rate limiter with SQLite and in-memory persistence"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Afzalbek", email = "afzalbek-dev@users.noreply.github.com"}]
+
+[project.scripts]
+rate-guard = "rate_guard.cli:main"
